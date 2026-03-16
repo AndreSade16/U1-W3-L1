@@ -4,16 +4,7 @@
 */
 
 const concatTwoStrings = (string1, string2) => {
-  let tempString1 = "";
-  let tempString2 = "";
-  for (let i = 0; i < 2; i++) {
-    tempString1 += string1[i];
-  }
-  for (let j = 0; j < 3; j++) {
-    tempString2 += string2[j];
-  }
-
-  const finalString = tempString1 + tempString2;
+  const finalString = string1.slice(0, 2) + string2.slice(-3);
   console.log(finalString.toUpperCase());
 };
 
