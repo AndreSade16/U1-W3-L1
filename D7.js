@@ -33,8 +33,8 @@ const onlyEven = (arr) => {
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-let sum = 0;
 const sumFunc = (arr) => {
+  let sum = 0;
   arr.forEach((num) => (sum += num));
   return sum;
 };
@@ -245,4 +245,3 @@ const movieFinder = (arr, id) => arr.find((movie) => movie.imdbID === id);
 
 const indexFromYearFinder = (arr, year) =>
   arr.findIndex((movie) => movie.Year === year);
-console.log(indexFromYearFinder(movies, "2005"));
